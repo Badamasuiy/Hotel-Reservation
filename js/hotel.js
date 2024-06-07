@@ -55,7 +55,7 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
 
     // Validate phone number
 
-    if (!phone.match(/^\d{10}$/)) {
+    if (!phone.match(/^\d{11}$/)) {
         document.getElementById('phoneError').innerText = 'Phone number should be 10 digits.';
         Valid = false;
     }
