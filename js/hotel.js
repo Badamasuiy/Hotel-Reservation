@@ -48,7 +48,7 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
 
       // Validate email
 
-    if (email.trim() === '') {
+    if (!email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
         document.getElementById('emailError').innerText = ' Enter a valid Email';
         Valid = false;
     } 
